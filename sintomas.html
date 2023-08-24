@@ -23,16 +23,16 @@
         <div class="form-group">
           <label class="form-label">Sintomas:</label>
           <div class="checkbox-group">
-            <label><input type="checkbox" name="sintomas" value="dor-cabeca"> Dor de Cabeça</label><br>
-            <label><input type="checkbox" name="sintomas" value="dor-garganta"> Dor de Garganta</label><br>
-            <label><input type="checkbox" name="sintomas" value="febre"> Febre</label><br>
-            <label><input type="checkbox" name="sintomas" value="nausea"> Náusea</label><br>
-            <label><input type="checkbox" name="sintomas" value="fraqueza"> Fraqueza</label><br>
-            <label><input type="checkbox" name="sintomas" value="diarreia"> Diarreia</label><br>
-            <label><input type="checkbox" name="sintomas" value="olhos-vermelhos"> Olhos Vermelhos</label><br>
-            <label><input type="checkbox" name="sintomas" value="tremores"> Tremores</label><br>
-            <label><input type="checkbox" name="sintomas" value="vomito"> Vômito</label><br>
-            <label><input type="checkbox" name="sintomas" value="dores-musculares"> Dores Musculares</label><br>
+            <label><input type="checkbox" name="sintomas" id="dor-cabeca"> Dor de Cabeça</label><br>
+            <label><input type="checkbox" name="sintomas" id="dor-garganta"> Dor de Garganta</label><br>
+            <label><input type="checkbox" name="sintomas" id="febre"> Febre</label><br>
+            <label><input type="checkbox" name="sintomas" id="nausea"> Náusea</label><br>
+            <label><input type="checkbox" name="sintomas" id="fraqueza"> Fraqueza</label><br>
+            <label><input type="checkbox" name="sintomas" id="diarreia"> Diarréia</label><br>
+            <label><input type="checkbox" name="sintomas" id="olhos-vermelhos"> Olhos Vermelhos</label><br>
+            <label><input type="checkbox" name="sintomas" id="tremores"> Tremores</label><br>
+            <label><input type="checkbox" name="sintomas" id="vomito"> Vômito</label><br>
+            <label><input type="checkbox" name="sintomas" id="dores-musculares"> Dores Musculares</label><br>
           </div>
         </div>
         <label>Digite algum outro sintoma:
@@ -45,13 +45,14 @@
         </label>
         <br>
         <br>
-        <button class="carteira" type="submit">
+        <button class="carteira" type="submit" onclick="Alerta()">
           <a href="carteira.html">Enviar</a>
         </button>
+        
 
     </form>
   </div>
-
+  <script src="sintomas.js"></script>
 </body>
 
 </html>
