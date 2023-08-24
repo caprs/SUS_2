@@ -1,0 +1,78 @@
+.col2{
+    padding: 20px;
+    column-width: 50%;
+}
+
+.col3{
+    padding: 20px;
+    column-width: 50%;
+}
+
+.margem{
+    padding: 5px;
+}
+
+.Hospital{
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icone{
+   position: absolute;
+   left: 650px;
+   top: -400px;
+   width: 250px;
+}
+
+.col4{
+    padding: 20px;
+    margin-left: -218px;
+    column-width: 140px;
+}
+
+.col5{
+    padding: 20px;
+    margin-left: -35px;
+}
+
+body{
+    background-color: rgba(128, 145, 145, 0.815);
+}
+
+
+form-check1{
+    margin-left: -80px;
+}
+
+
+.sintomas{
+    margin-left: -210px;
+    background-color: #090a09;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sintomas:hover{
+    color: gray;
+}
+
+.voltar{
+    margin-left: -210px}
+
+a{
+    color: black;
+    
+}
+
+a:hover{
+    color: aliceblue;
+}
+
