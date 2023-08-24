@@ -20,5 +20,6 @@ function Alerta() {
     // Aqui você pode adicionar a lógica para enviar o formulário
   } else {
     alert('Por favor, preencha pelo menos 2 sintomas');
+    location.href = "sintomas.html"
   }
 });
