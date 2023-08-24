@@ -15,15 +15,15 @@ L.marker([51.5, -0.09]).addTo(map)
     console.log(map);
 
     function success(pos){
-        console.log(pos);
+        
         console.log(pos.coords.latitude, pos.coords.longitude);
         h2.textContent = `Latitude:${pos.coords.latitude}, Longitude:${pos.coords.longitude}`;
     
         if (map === undefined) {
-            map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 30);
+            map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 40);
         } else {
             map.remove();
-            map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 30);
+            map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 40);
         }
     
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

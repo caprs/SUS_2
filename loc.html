@@ -11,7 +11,8 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-    <title>Leaflet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Localização</title>
     <style>
         #mapid { 
             height: 300px;
@@ -20,6 +21,13 @@
     </style>
 </head>
 <body>
+    <!-- Imagem e texto -->
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="loc-inline-block align-top" alt="">
+      Localização
+    </a>
+  </nav>
     <h1>Sua localização é:</h1>
     <h2></h2>
     <div id="mapid"></div>
