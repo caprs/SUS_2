@@ -12,8 +12,10 @@ L.marker([51.5, -0.09]).addTo(map)
 
     let h2 = document.querySelector('h2');
     var map;
-    
+    console.log(map);
+
     function success(pos){
+        console.log(pos);
         console.log(pos.coords.latitude, pos.coords.longitude);
         h2.textContent = `Latitude:${pos.coords.latitude}, Longitude:${pos.coords.longitude}`;
     
