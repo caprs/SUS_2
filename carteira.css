@@ -22,7 +22,8 @@ h1{
 }
 
 body{
-    background-color: rgba(128, 145, 145, 0.815);
+    background-image: url(./img/parede-de-concreto.jpg);
+    background-size: cover;
 }
 
 button{

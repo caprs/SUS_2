@@ -132,8 +132,8 @@ card{
 }
 
 .card4{
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
     position: relative;
     perspective: 800px;
     
@@ -144,8 +144,8 @@ card{
 }
 
 .front4, .back4{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     backface-visibility: hidden;
     transition: all 1s;
