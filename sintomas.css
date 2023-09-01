@@ -52,9 +52,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+ 
   min-height: 100vh;
   background-image: url(./img/parede-de-concreto.jpg);
   background-size: cover;
@@ -67,6 +66,10 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+  
 }
 
 .h2{
@@ -112,3 +115,5 @@ a{
   color: black;
   text-decoration: none;
 }
+
+

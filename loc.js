@@ -1,47 +1,30 @@
-var map = L.map('mapid').setView([51.505, -0.09], 13);
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
+function procureLoc(){
+    var cidade = document.getElementById("busca").value;
 
 
 
-    let h2 = document.querySelector('h2');
-    var map;
-    console.log(map);
 
-    function success(pos){
-        
-        console.log(pos.coords.latitude, pos.coords.longitude);
-        h2.textContent = `Latitude:${pos.coords.latitude}, Longitude:${pos.coords.longitude}`;
-    
-        if (map === undefined) {
-            map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 111);
-        } else {
-            map.remove();
-            map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 111);
-        }
-    
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-    
-        L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
-            .bindPopup('Eu estou aqui!')
-            .openPopup();
+
+
+
+fetch('https://ipgeolocation.abstractapi.com/v1?' +cidade+ 'api_key=8c75a03818684a7fae3727b70d4d0e3c')
+  .then(response => {
+    if (response.ok){
+        throw new Error('verifique sua localização e tente novamente');
     }
-    
-    function error(err){
-        console.log(err);
-    }
-    
-    var watchID = navigator.geolocation.watchPosition(success, error, {
-        enableHighAccuracy: true,
-        timeout: 5000
-    });
-    
-    //navigator.geolocation.clearWatch(watchID);
+
+    const retorno = response.json();
+    return retorno;
+})
+    .then(data => {
+        console.log(data.main.ip_address);
+
+        var ip = data.main.ip_address;
+        ip = "166.171.248.255";
+        document.getElementById("saida").value = ip;
+    })
+  .catch(err => console.error(err));
+
+}
+
+ 

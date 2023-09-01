@@ -48,7 +48,7 @@ button::before{
     height: 4px;
     width: 10px;
     top: -4px;
-    background-color: rgb(0, 174, 255);
+   
     left: 80%;
     transform: skewX(130deg);
 }
@@ -59,18 +59,17 @@ button::after{
     height: 4px;
     width: 10px;
     bottom: -4px;
-    background-color: rgba(37, 114, 255, 0.856);
     left: 20%;
     transform: skewX(130deg);
 }
 
 button:hover{
-    color: white;
-    border-color: rgba(167, 178, 179, 0.897);
+    color: rgb(0, 0, 0);
+    border-color: rgba(88, 98, 99, 0.897);
 }
 
 button:hover::before{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     left: 20%;
 }
 .meulink{

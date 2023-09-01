@@ -74,3 +74,10 @@ h1{
     transform: scale(1.2);
  }
 
+.nav-link{
+   color: black;
+}
+
+.nav-link:hover{
+   color: rgba(142, 132, 132, 0.516);
+}

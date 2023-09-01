@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--divinectorweb.com-->
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>How to 3D Pricing Carousel using Materialize CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="sobre.css">
 </head>
+
 <body>
-    <div class="seta">
-        <a href="index.html"><img src="./img/seta-para-a-esquerda.png" class="seta" width="40" height="40"></a>
+
+    <h2>Integrantes do projeto</h2>
+    <div class="carousel">
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-area" style="background-image: url(./img/perfil.jpg);"></div>
+                <div class="container">
+                    <h4>Gabriely Rangel</h4>
+                    
+                  
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-area" style="background-image: url(img/2.jpg);"></div>
+                <div class="container">
+                    <h4>Otávio Volpe</h4>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-area" style="background-image: url(img/3.jpg);"></div>
+                <div class="container">
+                    <h4><b>Giovana Batista</b></h4>
+                    
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-area" style="background-image: url(img/3.jpg);"></div>
+                <div class="container">
+                    <h4><b>Maria Vitória</b></h4>
+                    
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-        <div class="front">
-            
+    <footer>
+        <div class="content">
+            Desenvolvedora do site - Ana Livia Caprioli
+   
         </div>
-        <div class="back">
-            integrante do grupo
-        </div>
-    </div>
-        <div class="card2">
-            <div class="front2">
-                
-            </div>
-            <div class="back2">
-                integrante do grupo
-            </div>
-        </div>
-
-        <div class="card3">
-            <div class="front3">
-               
-            </div>
-            <div class="back3">
-               integrante do grupo
-            </div>
-        </div>
-
-
-        <div class="card4">
-            <div class="front4">
-               
-            </div>
-            <div class="back4">
-               integrante do grupo
-            </div>
-        </div>
-
-        <footer>
-            <h5>Desenvolvedora do site - Ana Livia Caprioli </h5>
-        </footer>
+        <a href="index.html" class="link">Início</a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                padding: 200
+            });
+            autoplay();
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
+        });
+    </script>
 </body>
+
 </html>
