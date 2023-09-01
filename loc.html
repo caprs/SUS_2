@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Previsão do Tempo</title>
   <link rel="stylesheet" href="loc.css">
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
-<body>
-  <div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-  mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-  });
-</script>
 
+<body>
+  <label>Digite sua Localização
+    <input type="text" id="entrada">
+    <button type="submit" onclick="procureLoc()" ondblclick="nnK()">Buscar</button>
+  </label>
+  <div id="map"></div>
+  </div>
+  <input type="text" placeholder="sua faixa etária" list="faixa">
+  <datalist id="faixa">
+    <option value="">faixa etária:</option>
+    <option value="-18">menor de idade</option>
+    <option value="+18">maior de idade</option>
+    <option value="+60">idoso</option>
+  </datalist>
+
+  <script src="loc.js"></script>
 </body>
+
 </html>

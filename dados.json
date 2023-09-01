@@ -1,0 +1,16 @@
+{
+    "hospital": {
+      "nome": "Hospital Central",
+      "endereco": "123 Rua Principal, Cidade Grande",
+      "latitude": -23.456789,
+      "longitude": -45.678901
+    },
+    "local": {
+      "nome": "Local de Referência",
+      "endereco": "456 Avenida Secundária, Cidade Pequena",
+      "latitude": -23.987654,
+      "longitude": -45.123456
+    },
+    "distancia_km": 5.6
+  }
+  
