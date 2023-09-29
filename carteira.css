@@ -21,15 +21,12 @@ h1{
     animation: floating 6s ease-out infinite
 }
 
-body{
-    background-image: url(./img/parede-de-concreto.jpg);
-    background-size: cover;
-}
+
 
 button{
     position: relative;
-    background-color: transparent;
-    border: 4px solid #fff;
+    background-color: black;
+    border: 4px solid #000000;
     height: 30px;
     width: 80px;
     color: blue;
@@ -74,4 +71,5 @@ button:hover::before{
 }
 .meulink{
     color: white;
+    text-decoration: none;
 }

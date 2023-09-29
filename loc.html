@@ -1,29 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Previsão do Tempo</title>
-  <link rel="stylesheet" href="loc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <link rel="stylesheet" href="loc.css">
+    
+
 </head>
-
 <body>
-  <label>Digite sua Localização
-    <input type="text" id="entrada">
-    <button type="submit" onclick="procureLoc()" ondblclick="nnK()">Buscar</button>
-  </label>
-  <div id="map"></div>
+  <nav class="navbar  bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" >
+        <img src="./img/icone.png" alt="Logo" width="35" height="30" class="d-inline-block align-text-top">
+        SUS
+      </a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" class="cadastro">Pagina inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+       
+      </ul>
+  </nav>
+  <br>
+  <h1>Sua localização</h1>
+  <p>Descubra seus hospitais mais próximos</p>
+  <div class="campo">
+    <label>
+      Digite sua cidade
+      <input type="text" id="buscar">
+      <button type="submit" onclick="buscarLoc()">Buscar</button>
+    </label>
   </div>
-  <input type="text" placeholder="sua faixa etária" list="faixa">
-  <datalist id="faixa">
-    <option value="">faixa etária:</option>
-    <option value="-18">menor de idade</option>
-    <option value="+18">maior de idade</option>
-    <option value="+60">idoso</option>
-  </datalist>
+  <br>
+  <br>
+  <div id="map"></div>
+   
+    
+  
+    <br>
+    <button type="submit" onclick="reloadPage()">Recarregar mapa</button>
+    <hr>
+    <br>
 
-  <script src="loc.js"></script>
+
+    <div class="container2">
+      <h3>Meu endereço</h3>
+      <input type="text" id="busca" placeholder="Digite seu CEP aqui">
+<button type="submit" onclick="buscarCep()">Buscar</button>
+<br>
+<br>
+<label>
+  Rua:
+  <br>
+  <input type="text" id="ruaInput" disabled>
+</label>
+<br>
+<br>
+<label>
+  Bairro:
+  <br>
+  <input type="text" id="bairroInput" disabled>
+</label>
+
+    
+    <script src="loc.js"></script>
 </body>
-
 </html>

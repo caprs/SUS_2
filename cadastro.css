@@ -65,7 +65,8 @@ form-check1{
 }
 
 .voltar{
-    margin-left: -210px}
+    margin-left: -210px;
+}
 
 a{
     color: black;
@@ -74,5 +75,9 @@ a{
 
 a:hover{
     color: aliceblue;
+    text-decoration: none;
 }
 
+#enviar:hover{
+    background-color: rgba(128, 145, 145, 0.815);
+}

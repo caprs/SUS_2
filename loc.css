@@ -1,0 +1,122 @@
+body{
+  background-color: rgba(128, 145, 145, 0.815);
+}
+
+
+
+
+#map{
+  width: 100vw;
+  height: 100vh;
+  margin-top: -10px;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  border: 0.5px solid #ccc; /* Borda com cor cinza */
+  color: #333; /* Cor do texto */
+  font-size: 15px; /* Tamanho da fonte */
+  padding: 4px; /* Espaçamento interno */
+}
+
+label{
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+}
+
+button {
+  background-color: #232222a2; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 5px 10px; /* Espaçamento interno (vertical horizontal) */
+  border: none; /* Remove a borda padrão do botão */
+  cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
+  border-radius: 3px; /* Borda arredondada */
+}
+
+/* Estilização do botão quando o mouse passa por cima */
+button:hover {
+  background-color: #0a0a0a; /* Nova cor de fundo */
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.751);
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.campo{
+  text-align: center;
+}
+
+.nav-link{
+  color: black;
+}
+
+.nav-link:hover{
+  color: rgba(142, 132, 132, 0.516);
+}
+
+
+
+.container2{
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 350px;
+}
+
+
+
+
+.form{
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+}
+
+
+
+input[type="text"]{
+  width: 200px; /* Largura */
+  height: 15px; /* Altura */
+  padding: 10px;
+}
+h3{
+  color: rgba(114, 112, 112, 0.708);
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+button:hover{
+  background-color: rgba(128, 128, 128, 0.795);
+}
+
+label{
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-weight: bold;
+  
+}
