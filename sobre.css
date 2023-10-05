@@ -27,11 +27,11 @@ h2 {
 	margin: auto;
 	text-align: center;
 	border-radius: 10px;
-	height: 450px;
+	height: 650px;
   }
 .img-area{
 	border-radius: 10px 10px 0 0;
-	height: 200px;
+	height: 400px;
 	background-size: cover;
 	background-position: center center;
 }
@@ -82,7 +82,7 @@ body{
     color: white;
     transform: scale(1);
     transition: transform 0.3s ease;
-    text-decoration:underline white;
+    text-decoration:none
     margin-top: -30px;
 }
 
